@@ -5,7 +5,7 @@
 @use "@infragistics/igniteui-angular/theming" as *;
 
 @include core();
-@include typography($font-family: "Righteous", $type-scale: $bootstrap-type-scale);
+@include typography($font-family: "Roboto", $type-scale: $bootstrap-type-scale);
 
 $custom-palette: palette(
   $primary: #007bff,
