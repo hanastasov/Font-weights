@@ -1,0 +1,60 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <igx-calendar [value]="date" [hasHeader]="true" [vertical]="false" class="content"></igx-calendar>
+  </div>
+  <div class="column-layout group_1">
+    <igx-chip class="content">
+      <igx-prefix>
+        <igx-icon class="icon">
+          place
+        </igx-icon>
+      </igx-prefix>
+      Country
+    </igx-chip>
+    <igx-input-group type="border" class="input">
+      <igx-prefix>
+        <igx-icon class="icon_1">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon_1">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" igxInput />
+      <label igxLabel>Label/Placeholder</label>
+    </igx-input-group>
+  </div>
+  <div class="column-layout group_1">
+    <button igxButton="raised" igxRipple class="button">
+      Button
+    </button>
+    <igx-snackbar actionText="Action" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
+      This is a message
+    </igx-snackbar>
+  </div>
+</div>
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="quickFilter" class="grid">
+      <igx-column field="lastName" header="lastName" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="employeeID" dataType="number" header="employeeID" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="firstName" header="firstName" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="title" header="title" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="titleOfCourtesy" header="titleOfCourtesy" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="birthDate" dataType="date" header="birthDate" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="hireDate" dataType="date" header="hireDate" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.street" header="address street" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.city" header="address city" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.region" header="address region" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.postalCode" header="address postalCode" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.country" header="address country" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="address.phone" header="address phone" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="managerID" dataType="number" header="managerID" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="notes" header="notes" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+      <igx-column field="avatarUrl" header="avatarUrl" [groupable]="true" [sortable]="true" [hasSummary]="true" [selectable]="false"></igx-column>
+    </igx-grid>
+  </div>
+  <div class="column-layout group_1"></div>
+</div>
