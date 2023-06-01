@@ -4,8 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyAppComponent } from './my-app/my-app.component';
-import { IgxCalendarModule, IgxChipsModule, IgxInputGroupModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxSnackbarModule, IgxToggleModule, IgxGridModule } from '@infragistics/igniteui-angular';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,17 +14,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     HammerModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    IgxCalendarModule,
-    IgxChipsModule,
-    IgxInputGroupModule,
-    IgxIconModule,
-    IgxButtonModule,
-    IgxRippleModule,
-    IgxSnackbarModule,
-    IgxToggleModule,
-    IgxGridModule,
-    FormsModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
